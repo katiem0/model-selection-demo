@@ -52,6 +52,13 @@
 - You want the **10% discount** on paid plans.
 - You want routing to respond to real-time system health.
 
+## Complex-task add-on (Copilot Coding / Cloud agent)
+
+- Build a short context packet first (scope, files, stop condition, validation).
+- Keep custom instructions task-scoped and under ~10 bullets.
+- Split research, planning, and execution into separate runs when context gets large.
+- Use custom agents only for repeated workflows with stable success criteria.
+
 ---
 
 ## Anti-patterns

@@ -27,17 +27,15 @@ ruff check demos/01-lightweight
 
 > Select **Claude Haiku 4.5** (or another lightweight tier model) in the model picker.
 
-```
-Open #file:demos/01-lightweight/messy.py.
-
-Refactor it for readability without changing behavior:
-- Add concise docstrings to every public function (one line each).
-- Use built-in generics (list[int], dict[str, int]) instead of typing.List etc. Remove the typing import if it becomes unused.
-- Use descriptive parameter names.
-- Make `ruff check demos/01-lightweight` pass.
-
-Do not change function names, signatures (other than parameter names), or behavior. Do not add new functions. When you're done, run the tests in demos/01-lightweight and confirm they pass.
-```
+> Open #file:demos/01-lightweight/messy.py.
+>
+> Refactor it for readability without changing behavior:
+> - Add concise docstrings to every public function (one line each).
+> - Use built-in generics (list[int], dict[str, int]) instead of typing.List etc. Remove the typing import if it becomes unused.
+> - Use descriptive parameter names.
+> - Make `ruff check demos/01-lightweight` pass.
+>
+> Do not change function names, signatures (other than parameter names), or behavior. Do not add new functions. When you're done, run the tests in demos/01-lightweight and confirm they pass.
 
 ## What to point out
 

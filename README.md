@@ -12,6 +12,9 @@ By the end of the session participants can:
 - Identify when **Auto** (with task-optimized, intent-based routing in VS Code) is the right default and when to override it.
 - Apply five token-efficiency practices from the source doc to their own workflow.
 - Recognize the cost of "default to the most powerful model" in execution-heavy work.
+- Handle moderately complex scenarios by shaping context deliberately (what to include, what to exclude, and when to reset).
+- Write short, optimized custom instructions and understand when custom agents are worth the setup cost.
+- Run a final handoff-style workflow that maps cleanly to Copilot Coding and Cloud agent usage.
 
 ## What's in here
 
@@ -25,6 +28,7 @@ By the end of the session participants can:
 | [demos/03-reasoning/](demos/03-reasoning/) | Diagnose a subtle bug across files — reasoning tier earns its cost |
 | [demos/04-auto-vs-manual/](demos/04-auto-vs-manual/) | Run the same three tasks through Auto and compare to manual picks |
 | [demos/05-research-plan-implement/](demos/05-research-plan-implement/) | Full R→P→I walkthrough on a small CLI (markdown link checker) |
+| [demos/06-copilot-coding-cloud/](demos/06-copilot-coding-cloud/) | Complex-scenario finale: context packet + optimized instructions + custom agent handoff |
 
 ## Setup (one-time, before the workshop)
 
@@ -51,5 +55,7 @@ You'll also want:
 - Notes for instructors on showing real token counts live in VS Code
 
 **Hands-on (40–50 min):** Run through demos 01–05. Between demos, pause and point out how tight prompting leads to one-shot success (reinforce Demo 00 lessons).
+
+**Complex finale (8–12 min, optional but recommended):** Run demo 06 to show how the same principles scale to a larger, realistic task where context control and instruction quality matter more than raw model strength.
 
 **Q&A (10 min):** Use the model cheatsheet as a reference for common questions.

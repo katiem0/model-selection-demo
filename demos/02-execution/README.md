@@ -24,16 +24,14 @@ pytest demos/02-execution -q   # red — that's expected
 
 > Select **GPT-5.3-Codex** (or **GPT-5 mini** / **Claude Sonnet 4.6**) in the model picker.
 
-```
-Implement the functions in #file:demos/02-execution/cart.py to match #file:demos/02-execution/SPEC.md.
-
-When you're done:
-- All tests in demos/02-execution must pass: `pytest demos/02-execution -q`
-- `ruff check demos/02-execution` must pass.
-- Do not add new public functions. Do not change function signatures.
-
-Stop as soon as both commands are green.
-```
+> Implement the functions in #file:demos/02-execution/cart.py to match #file:demos/02-execution/SPEC.md.
+>
+> When you're done:
+> - All tests in demos/02-execution must pass: `pytest demos/02-execution -q`
+> - `ruff check demos/02-execution` must pass.
+> - Do not add new public functions. Do not change function signatures.
+>
+> Stop as soon as both commands are green.
 
 ## What to point out
 

@@ -26,10 +26,8 @@ You'll see one failing test. The error message is loud but the cause is **not** 
 
 > Select a **lightweight** model (e.g. **Claude Haiku 4.5**).
 
-```
-The test `test_each_warehouse_is_independent` in #file:demos/03-reasoning/test_inventory.py is failing.
-Run it, identify the root cause, and fix it. Do not modify the test.
-```
+> The test `test_each_warehouse_is_independent` in #file:demos/03-reasoning/test_inventory.py is failing.
+> Run it, identify the root cause, and fix it. Do not modify the test.
 
 ### What you're likely to see
 - A surface-level fix in `add_item` (deep-copying the items list on read).
@@ -43,11 +41,9 @@ Run it, identify the root cause, and fix it. Do not modify the test.
 
 > Reset chat. Select a **reasoning** model (e.g. **Claude Opus 4.7** or **GPT-5.5**).
 
-```
-The test `test_each_warehouse_is_independent` in #file:demos/03-reasoning/test_inventory.py is failing.
-
-Diagnose the root cause across #file:demos/03-reasoning/inventory.py and #file:demos/03-reasoning/reporting.py. Explain the cause in one paragraph before changing any code, then apply the smallest fix at the root. Do not modify the test.
-```
+> The test `test_each_warehouse_is_independent` in #file:demos/03-reasoning/test_inventory.py is failing.
+>
+> Diagnose the root cause across #file:demos/03-reasoning/inventory.py and #file:demos/03-reasoning/reporting.py. Explain the cause in one paragraph before changing any code, then apply the smallest fix at the root. Do not modify the test.
 
 ### What you should see
 - The agent reads both files before changing anything.

@@ -119,11 +119,9 @@ Good prompt:
 
 If you want a single instruction to give the assistant during the demo, use this:
 
-```text
-Compare the bad and good prompts in #file:demos/00-token-efficiency/example_prompts.py.
-
-Explain why the good prompt is cheaper and more reliable, and call out the three prompt rules it demonstrates.
-```
+> Compare the bad and good prompts in #file:demos/00-token-efficiency/example_prompts.py.
+>
+> Explain why the good prompt is cheaper and more reliable, and call out the three prompt rules it demonstrates.
 
 ## What to point out
 
