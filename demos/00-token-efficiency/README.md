@@ -50,7 +50,7 @@ Good prompt:
 > 			result.append(x[i])
 > 	return result
 >
-> Return only the refactored function, no explanation.
+> Return no explanation.
 
 ### Example 2: Implementation task
 
