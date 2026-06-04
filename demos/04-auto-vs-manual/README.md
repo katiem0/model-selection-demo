@@ -22,7 +22,19 @@ You'll re-run three of the prompts you already used. Each one starts from a clea
    git checkout demos/01-lightweight/messy.py
    ```
 2. Start a new chat. Set the model to **Auto**.
-3. Paste the prompt from [demos/01-lightweight/README.md](../01-lightweight/README.md#the-exact-prompt-to-paste).
+3. Paste this prompt:
+
+   ```text
+   Open #file:demos/01-lightweight/messy.py.
+
+   Refactor it for readability without changing behavior:
+   - Add concise docstrings to every public function (one line each).
+   - Use built-in generics (list[int], dict[str, int]) instead of typing.List etc. Remove the typing import if it becomes unused.
+   - Use descriptive parameter names.
+   - Make `ruff check demos/01-lightweight` pass.
+
+   Do not change function names, signatures (other than parameter names), or behavior. Do not add new functions. When you're done, run the tests in demos/01-lightweight and confirm they pass.
+   ```
 4. Note: which model did Auto route to? (Hover over the assistant response in Copilot Chat.) How does the diff compare to the lightweight-model run from Demo 01?
 
 ### Round 2 — execution task (Demo 02 prompt)
@@ -32,7 +44,18 @@ You'll re-run three of the prompts you already used. Each one starts from a clea
    git checkout demos/02-execution/cart.py
    ```
 2. Start a new chat. Set the model to **Auto**.
-3. Paste the prompt from [demos/02-execution/README.md](../02-execution/README.md#the-exact-prompt-to-paste).
+3. Paste this prompt:
+
+   ```text
+   Implement the functions in #file:demos/02-execution/cart.py to match #file:demos/02-execution/SPEC.md.
+
+   When you're done:
+   - All tests in demos/02-execution must pass: `pytest demos/02-execution -q`
+   - `ruff check demos/02-execution` must pass.
+   - Do not add new public functions. Do not change function signatures.
+
+   Stop as soon as both commands are green.
+   ```
 4. Note: did Auto pick the same tier as you did manually in Demo 02? How does turn time / number of tool calls compare?
 
 ### Round 3 — reasoning task (Demo 03 prompt)
@@ -42,7 +65,13 @@ You'll re-run three of the prompts you already used. Each one starts from a clea
    git checkout demos/03-reasoning/inventory.py
    ```
 2. Start a new chat. Set the model to **Auto**.
-3. Paste the prompt from [demos/03-reasoning/README.md](../03-reasoning/README.md#step-2--switch-to-a-reasoning-model).
+3. Paste this prompt:
+
+   ```text
+   The test `test_each_warehouse_is_independent` in #file:demos/03-reasoning/test_inventory.py is failing.
+
+   Diagnose the root cause across #file:demos/03-reasoning/inventory.py and #file:demos/03-reasoning/reporting.py. Explain the cause in one paragraph before changing any code, then apply the smallest fix at the root. Do not modify the test.
+   ```
 4. Note: did Auto pick a reasoning-tier model? Did it find the root cause, or fix the symptom?
 
 ## Scorecard

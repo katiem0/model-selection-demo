@@ -2,7 +2,7 @@
 Simple token counter for demonstration purposes.
 
 This uses a basic approximation (word count + code factor) for rough estimation.
-For precise counts, use the official Anthropic token counter or your model's tokenizer.
+For precise counts, use your model's tokenizer or the Copilot Chat token metadata.
 
 Usage:
     python token_counter.py < some_code.py
