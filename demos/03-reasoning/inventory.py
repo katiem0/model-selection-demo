@@ -1,5 +1,5 @@
-def add_warehouse(name: str, items: list | None = None) -> dict:
-    return {"name": name, "items": [] if items is None else items}
+def add_warehouse(name: str, items: list = []) -> dict:
+    return {"name": name, "items": items}
 
 
 def add_item(warehouse: dict, sku: str, qty: int) -> None:

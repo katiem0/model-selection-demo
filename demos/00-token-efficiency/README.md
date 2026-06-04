@@ -26,108 +26,96 @@ Use the prompts below during the workshop. Open two Copilot Chat sessions side b
 
 Bad prompt:
 
-```text
-I have this Python code that needs to be cleaned up. Can you make it better?
-
-def process_data(x):
-	result = []
-	for i in range(len(x)):
-		if x[i] > 0:
-			result.append(x[i] * 2)
-		else:
-			result.append(x[i])
-	return result
-```
+> I have this Python code that needs to be cleaned up. Can you make it better?
+>
+> def process_data(x):
+> 	result = []
+> 	for i in range(len(x)):
+> 		if x[i] > 0:
+> 			result.append(x[i] * 2)
+> 		else:
+> 			result.append(x[i])
+> 	return result
 
 Good prompt:
 
-```text
-Refactor this function to use a list comprehension. Keep the logic identical; no performance changes.
-
-def process_data(x):
-	result = []
-	for i in range(len(x)):
-		if x[i] > 0:
-			result.append(x[i] * 2)
-		else:
-			result.append(x[i])
-	return result
-
-Return only the refactored function, no explanation.
-```
+> Refactor this function to use a list comprehension. Keep the logic identical; no performance changes.
+>
+> def process_data(x):
+> 	result = []
+> 	for i in range(len(x)):
+> 		if x[i] > 0:
+> 			result.append(x[i] * 2)
+> 		else:
+> 			result.append(x[i])
+> 	return result
+>
+> Return only the refactored function, no explanation.
 
 ### Example 2: Implementation task
 
 Bad prompt:
 
-```text
-I need a function that calculates something. Can you write it?
-```
+> I need a function that calculates something. Can you write it?
 
 Good prompt:
 
-```text
-Write a function `calculate_discount(price, customer_type)` that:
-- Takes a float `price` and string `customer_type` ('standard', 'vip', 'bulk')
-- Returns the discounted price: standard=10%, vip=20%, bulk=15%
-- Raise ValueError if customer_type not in that list
-- Use only standard library
-
-Here's the test it should pass:
-
-def test_calculate_discount():
-		assert calculate_discount(100, 'standard') == 90
-		assert calculate_discount(100, 'vip') == 80
-		assert calculate_discount(100, 'bulk') == 85
-		with pytest.raises(ValueError):
-				calculate_discount(100, 'unknown')
-
-Implement only the function, no test code.
-```
+> Write a function `calculate_discount(price, customer_type)` that:
+> - Takes a float `price` and string `customer_type` ('standard', 'vip', 'bulk')
+> - Returns the discounted price: standard=10%, vip=20%, bulk=15%
+> - Raise ValueError if customer_type not in that list
+> - Use only standard library
+>
+> Here's the test it should pass:
+>
+> def test_calculate_discount():
+> 		assert calculate_discount(100, 'standard') == 90
+> 		assert calculate_discount(100, 'vip') == 80
+> 		assert calculate_discount(100, 'bulk') == 85
+> 		with pytest.raises(ValueError):
+> 				calculate_discount(100, 'unknown')
+>
+> Implement only the function, no test code.
 
 ### Example 3: Debugging task
 
 Bad prompt:
 
-```text
-My code doesn't work. Can you debug it?
-
-Here's the code:
-
-def add_item(warehouse, item):
-		all_items.append(item)
-
-def get_warehouse_items(warehouse):
-		return all_items
-
-# Test
-add_item('warehouse_a', 'item1')
-assert get_warehouse_items('warehouse_a') == ['item1']
-assert get_warehouse_items('warehouse_b') == []  # FAILS! warehouse_b has the item too!
-```
+> My code doesn't work. Can you debug it?
+>
+> Here's the code:
+>
+> def add_item(warehouse, item):
+> 		all_items.append(item)
+>
+> def get_warehouse_items(warehouse):
+> 		return all_items
+>
+> # Test
+> add_item('warehouse_a', 'item1')
+> assert get_warehouse_items('warehouse_a') == ['item1']
+> assert get_warehouse_items('warehouse_b') == []  # FAILS! warehouse_b has the item too!
 
 Good prompt:
 
-```text
-This code is failing the test below. The bug is that items added to warehouse_a
-appear in warehouse_b. Find the root cause and fix it.
-
-Here's the code:
-
-def add_item(warehouse, item):
-		all_items.append(item)
-
-def get_warehouse_items(warehouse):
-		return all_items
-
-# Test
-add_item('warehouse_a', 'item1')
-assert get_warehouse_items('warehouse_a') == ['item1']
-assert get_warehouse_items('warehouse_b') == []  # FAILS
-
-The issue is that all warehouses share the same list. Fix the data structure
-to keep each warehouse's items separate. Return only the corrected code.
-```
+> This code is failing the test below. The bug is that items added to warehouse_a
+> appear in warehouse_b. Find the root cause and fix it.
+>
+> Here's the code:
+>
+> def add_item(warehouse, item):
+> 		all_items.append(item)
+>
+> def get_warehouse_items(warehouse):
+> 		return all_items
+>
+> # Test
+> add_item('warehouse_a', 'item1')
+> assert get_warehouse_items('warehouse_a') == ['item1']
+> assert get_warehouse_items('warehouse_b') == []  # FAILS
+>
+> The issue is that all warehouses share the same list. Fix the data structure
+> to keep each warehouse's items separate. Return only the corrected code.
 
 If you want a single instruction to give the assistant during the demo, use this:
 
