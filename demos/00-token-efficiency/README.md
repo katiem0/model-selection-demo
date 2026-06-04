@@ -56,7 +56,7 @@ Good prompt:
 
 Bad prompt:
 
-> I need a function that calculates something. Can you write it?
+> I need a function that calculates discount, can you write it?
 
 Good prompt:
 
