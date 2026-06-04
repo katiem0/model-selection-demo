@@ -32,7 +32,7 @@
 | Read a complex stack trace + logs | Reasoning | **GPT-5.5**, **Claude Sonnet 4.6** |
 | Design a new system boundary | Reasoning | **Claude Opus 4.7**, **GPT-5.5** |
 
-> Models on this page reflect the GitHub Copilot model lineup as referenced in [docs/improve-agent-quality-and-token-optimization.md](improve-agent-quality-and-token-optimization.md). Check the [official comparison](https://docs.github.com/copilot/using-github-copilot/ai-models/choosing-the-right-ai-model-for-your-task) before the workshop — the roster moves.
+> Check the [official comparison](https://docs.github.com/copilot/using-github-copilot/ai-models/choosing-the-right-ai-model-for-your-task) for more details.
 
 ---
 
