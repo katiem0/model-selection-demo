@@ -37,21 +37,11 @@ ruff check demos/01-lightweight
 >
 > Do not change function names, signatures (other than parameter names), or behavior. Do not add new functions. When you're done, run the tests in demos/01-lightweight and confirm they pass.
 
-## What to point out
+## What to notice
 
-- The agent should make a focused, small diff. Read the diff aloud — every change traces to a bullet in the prompt.
-- It should *not* introduce a class, split the file, or "modernize" beyond the bullets.
-- Total turn time should feel snappy compared to demos 3–5.
-
-## The contrast moment (optional, ~2 min)
-
-1. Reset chat. Switch to a **reasoning** model. Paste the *same* prompt.
-2. Watch for one of these tells:
-   - Suggests splitting into multiple files
-   - Adds a `Protocol` or `dataclass` you didn't ask for
-   - Writes 3-paragraph docstrings instead of one line
-   - Proposes new tests
-3. Land the point: **the work didn't change, but the model's instinct did.** On mechanical work, more reasoning ≠ better outcome.
+- Every change in the diff traces directly to a bullet in the prompt — nothing extra was added.
+- No new class, split files, or verbose docstrings.
+- Response time feels fast. This is what the right model for the task looks like.
 
 ## Reset before the next demo
 

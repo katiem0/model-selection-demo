@@ -85,23 +85,12 @@ Read the plan with the audience. Point out: this plan was written *with no view 
 
 The agent should now be in tight loop with the guardrails (§4 of the doc). When `pytest` fails, watch how the agent adjusts. Narrate it.
 
-## What to point out
+## What to notice
 
-- The plan was made from research notes, *not* the source file. The implementation was made from the plan, *not* the research notes. Each phase only ever loaded what it needed. That's how you keep context lean.
-- We used **three different models** across three phases — each fit for the step it ran. Total cost is almost always lower than using the strongest model for the whole thing.
-- `pytest` and `ruff` close the loop. Without them, the implementation phase would drift; with them, the agent self-corrects in fewer turns.
-- The same prompt pattern (research → plan → implement) scales up to real features. The only thing that changes is the scope of each phase.
-
-## Bridge to complex scenarios
-
-If participants ask "does this still work on bigger tasks?", this is the transition:
-
-- Treat `research-notes.md` as a **context packet**. In larger repos, this is where you summarize architecture facts so later phases do not have to re-read dozens of files.
-- Treat `plan.md` as a **handoff contract**. You can give this to a custom agent or Copilot Coding/Cloud agent and keep execution bounded.
-- Keep instructions short and test-driven. The strongest pattern is still: constrained scope + explicit stop condition + required validation commands.
-- Start a fresh chat whenever intent changes (research vs planning vs execution). Context resets are a feature, not a failure.
-
-For a dedicated cloud-agent-ready final run, continue to [`../06-copilot-coding-cloud/README.md`](../06-copilot-coding-cloud/README.md).
+- Each phase only loaded the files it needed. Research read `sample.md`. Plan read the research notes. Implementation read the plan. No phase saw everything — that's how context stays lean.
+- Three different models ran across three phases. Total cost is almost always lower than running the strongest model for the whole thing.
+- Watch `pytest` and `ruff` close the loop during the implementation phase. When a test fails, the agent adjusts and reruns rather than drifting.
+- `research-notes.md` is a context packet. `plan.md` is a handoff contract. The same pattern scales to real features — only the scope of each phase changes.
 
 ## Reset for Q&A
 

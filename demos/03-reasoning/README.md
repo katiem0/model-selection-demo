@@ -50,11 +50,11 @@ You'll see one failing test. The error message is loud but the cause is **not** 
 - It identifies that `add_warehouse(name, items=[])` uses a **mutable default argument** — every warehouse created without an explicit `items` shares the same list object.
 - The fix is one line: `items=None` + `items = [] if items is None else items` inside the function.
 
-## What to point out
+## What to notice
 
-- **Same prompt structure, different model, different depth of diagnosis.** The reasoning model spent its tokens on *understanding*, not patching.
-- The bug is a textbook Python pitfall but the *cross-file* layout obscures it. That's the realistic case where reasoning models pay off.
-- After the fix, run the test suite. Add a third warehouse interactively to prove the fix is at the root and not at the symptom.
+- The lightweight model patches the surface. The reasoning model reads both files and finds the root cause.
+- Same prompt, same failing test — different depth of diagnosis.
+- After the fix, run the tests. Try adding a third warehouse to confirm the fix is at the root, not the symptom.
 
 ## Reset before the next demo
 

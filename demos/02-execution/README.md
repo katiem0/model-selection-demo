@@ -33,21 +33,11 @@ pytest demos/02-execution -q   # red — that's expected
 >
 > Stop as soon as both commands are green.
 
-## What to point out
+## What to notice
 
-- **Stop condition matters.** The "stop as soon as both commands are green" line is the §2 lesson from the doc — without it agents tend to add helpers, write extra docstrings, propose additional tests.
-- The agent should read the spec, write the code, run the tests, and stop. That's it.
-- Time it. This run should feel like execution, not deliberation.
-
-## The contrast moment (optional, ~2 min)
-
-1. Reset chat. Switch to a **reasoning** model. Paste the *same* prompt.
-2. Watch for one or more of:
-   - Extra discussion of trade-offs the spec already decided.
-   - Suggesting alternative APIs.
-   - Adding tests beyond the ones provided.
-   - More tool calls / longer turn time for the same result.
-3. Land the point: **when the plan is clear, reasoning is overhead.**
+- The agent reads the spec, writes the code, runs the tests, and stops. No extras.
+- "Stop as soon as both commands are green" is doing real work — without it, agents tend to add helpers or propose additional tests.
+- Note how fast this feels compared to Demo 03. Clear spec + execution model = fast loop.
 
 ## Reset before the next demo
 

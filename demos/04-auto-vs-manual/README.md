@@ -72,19 +72,19 @@ You'll re-run three of the prompts you already used. Each one starts from a clea
 
 Use [`scorecard.md`](scorecard.md) as a template — fill it in live and project it. The participants see Auto vs. manual scored on the same three tasks in the same room. That's the demo.
 
-## What to point out
+## What to notice
 
-- Auto's routing depends on **intent**, not just availability — so the same prompt structure can be routed to different tiers across rounds. That's the feature, not a bug.
-- On the **execution** round, you should see Auto stay in the general-purpose tier even if you've been pushing it through harder tasks all session. **Cache-boundary routing** keeps it from thrashing.
-- The **10% Auto discount** on paid plans applies to all of these turns. Note that out loud.
-- Where Auto *doesn't* match your manual pick, ask: was my manual pick actually better, or was I just defaulting to a habit?
+- Check which model Auto routed to — hover over the response to see. Does it match the tier you picked manually in demos 01–03?
+- On the execution round, Auto should stay in general-purpose tier even across a long session. That's cache-boundary routing working as intended.
+- Where Auto doesn't match your manual pick, ask: was the manual pick actually better, or was it habit?
 
-## When to override Auto (recap)
+## When to override Auto
+
 - Architecture / naming / boundary decisions → pin a reasoning model.
 - Long sequences of nearly-identical edits → pin a lightweight model.
-- Benchmarks / reproducibility / regression bisects → pin a specific model.
+- Benchmarks, reproducibility, or regression bisects → pin a specific model.
 - Everything else → trust Auto.
 
 ## Reset before the next demo
 
-> Click "New chat", and run `git checkout demos/` from the terminal to reset all demo files to their starting state.
+> Click "New chat", and run `git checkout demos/` from the terminal to reset all demo files.

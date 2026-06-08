@@ -84,15 +84,9 @@ Open a new chat, attach files with `#file:`, then paste:
 
 The key lesson is identical in both surfaces: **a tight context packet and lean instructions reduce retries more reliably than a larger model.**
 
-## What to point out live
+## What to notice
 
-- Better context beats bigger model once tasks become multi-file.
-- Short custom instructions improve reliability more than long instruction documents.
-- Cloud agent and local Copilot Coding both benefit from the same handoff packet pattern.
-- If the run drifts, the packet or instructions are usually the issue (not model capability).
-
-## Exit criteria
-
-- The audience sees a complete run with a bounded context packet.
-- Instructions are concise and task-specific.
-- The agent stops at the defined stop condition after validation.
+- The agent works only within the files listed in the context packet — it doesn't expand scope on its own.
+- Short, specific instructions produce more reliable output than long generic ones.
+- The agent stops at the defined condition after validation passes.
+- If the run drifts, the packet or instructions are usually the cause — not model capability.

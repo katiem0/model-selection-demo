@@ -123,28 +123,13 @@ If you want a single instruction to give the assistant during the demo, use this
 >
 > Explain why the good prompt is cheaper and more reliable, and call out the three prompt rules it demonstrates.
 
-## What to point out
+## What to notice
 
-- Specific prompts get smaller, more useful answers.
-- Bounded scope keeps both the prompt and the response short.
-- Clear specs and examples prevent clarification rounds.
-- The same task can cost much less without sacrificing quality.
-
-## The contrast moment (optional, ~2 min)
-
-1. Reset the chat.
-2. Switch to GPT-5.5 or Claude Opus 4.7.
-3. Set thinking effort to low for the explanation prompt.
-4. Paste the same comparison prompt.
-5. Point out whether the response becomes more explanatory than the demo needs.
-6. Reinforce the lesson: on simple prompt-crafting work, more reasoning can be overhead.
+- The good prompt response is shorter and correct. The bad prompt response hedges, explains, or asks a clarifying question.
+- Bounded scope keeps both the prompt and the response small.
+- Including the test as the spec eliminates a clarification round entirely.
+- The same task, with a tighter prompt, costs less and requires fewer follow-up turns.
 
 ## Reset before the next demo
 
 > Click New chat in Copilot Chat. Demo 01 should start clean.
-
-## Instructor notes
-
-- Keep this fast. The point is to show the pattern, not to dwell on token math.
-- Use the live token metadata in VS Code if it is visible.
-- Tie the result back to the next demos: better prompts make the rest of the workshop cheaper and faster.
