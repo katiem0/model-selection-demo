@@ -4,9 +4,9 @@
 **Recommended model mode:** **Auto** first, then pin a model only if needed for reproducibility
 **Goal:** show a realistic, moderately complex workflow where quality depends on context shaping and instruction quality, not just model size.
 
-This finale is designed to be run in either:
-- VS Code Copilot Coding flow
-- GitHub Copilot Cloud agent flow
+This demo works in local Copilot Chat, Copilot Coding, or Cloud agent — the context packet and instruction patterns are the same regardless of surface.
+
+> **No CCA access?** Run [Demo 07](../07-context-management/README.md) instead. It covers the same context-shaping principles using only local Copilot Chat.
 
 ## Why this demo exists
 
@@ -58,6 +58,8 @@ Skip custom agents for one-off work.
 
 ## Step 4 - Run the final prompt (3-5 min)
 
+**Option A — Copilot Coding or Cloud agent:**
+
 Paste this into Copilot Coding or Cloud agent:
 
 > Execution mode. Follow repository instructions and this task packet.
@@ -69,6 +71,18 @@ Paste this into Copilot Coding or Cloud agent:
 >
 > Do the work in minimal diffs, run validation commands from the packet, and stop as soon as all checks are green.
 > If any requirement conflicts, report the conflict before making additional edits.
+
+**Option B — local Copilot Chat:**
+
+Open a new chat, attach files with `#file:`, then paste:
+
+> Follow the instructions in #file:demos/06-copilot-coding-cloud/custom-instructions.md and the task defined in #file:demos/06-copilot-coding-cloud/context-packet.md.
+>
+> Do not read any other files unless they are listed in the context packet.
+> Make minimal diffs. Run the validation commands from the packet. Stop as soon as all checks pass.
+> If any requirement conflicts, report the conflict before editing further.
+
+The key lesson is identical in both surfaces: **a tight context packet and lean instructions reduce retries more reliably than a larger model.**
 
 ## What to point out live
 

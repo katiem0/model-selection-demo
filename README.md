@@ -28,7 +28,8 @@ By the end of the session participants can:
 | [demos/03-reasoning/](demos/03-reasoning/) | Diagnose a subtle bug across files — reasoning tier earns its cost |
 | [demos/04-auto-vs-manual/](demos/04-auto-vs-manual/) | Run the same three tasks through Auto and compare to manual picks |
 | [demos/05-research-plan-implement/](demos/05-research-plan-implement/) | Full R→P→I walkthrough on a small CLI (markdown link checker) |
-| [demos/06-copilot-coding-cloud/](demos/06-copilot-coding-cloud/) | Complex-scenario finale: context packet + optimized instructions + custom agent handoff |
+| [demos/06-copilot-coding-cloud/](demos/06-copilot-coding-cloud/) | Complex-scenario finale: context packet + optimized instructions + custom agent handoff (Copilot Coding / Cloud agent) |
+| [demos/07-context-management/](demos/07-context-management/) | Managing context in local IDE: when to reset, compact, re-anchor, and override instructions |
 
 ## Setup (one-time, before the workshop)
 
@@ -56,6 +57,10 @@ You'll also want:
 
 **Hands-on (40–50 min):** Run through demos 01–05. Between demos, pause and point out how tight prompting leads to one-shot success (reinforce Demo 00 lessons).
 
-**Complex finale (8–12 min, optional but recommended):** Run demo 06 to show how the same principles scale to a larger, realistic task where context control and instruction quality matter more than raw model strength.
+**Complex finale (8–12 min):** Choose based on your audience:
+- **With CCA access:** Run Demo 06. Shows context shaping for Copilot Coding / Cloud agent; the context packet and instruction patterns apply to local Chat too.
+- **Without CCA access:** Run Demo 07 instead. Covers the same principles (compact, re-anchor, new-chat signals, instruction scoping) entirely in local Copilot Chat. Same time budget.
+
+If time permits and the audience has CCA access, you can run both — Demo 07 is a fast conceptual primer (~10 min) that makes Demo 06's context packet feel immediately useful.
 
 **Q&A (10 min):** Use the model cheatsheet as a reference for common questions.
