@@ -40,6 +40,8 @@ that scans markdown files for broken local-file links and prints a report.
 > - Suggested scope boundaries: what should be IN scope for a v1 CLI, and what should be explicitly OUT of scope.
 >
 > Write the analysis into #file:demos/05-research-plan-implement/research-notes.md. Keep it under 40 lines. No code.
+>
+> Stop after writing `research-notes.md`.
 
 When the file is written, **scan it** and confirm it's grounded in the actual `sample.md`. If it's making things up, that's a red flag — call it out for the audience.
 
@@ -61,6 +63,8 @@ When the file is written, **scan it** and confirm it's grounded in the actual `s
 > - A short stop condition: what "done" means.
 >
 > Write the plan into #file:demos/05-research-plan-implement/plan.md. Use markdown headings. No code blocks longer than a single function signature.
+>
+> Stop after writing `plan.md`.
 
 Read the plan with the audience. Point out: this plan was written *with no view of `sample.md`* — it depends entirely on the research summary. That's why phase isolation works.
 

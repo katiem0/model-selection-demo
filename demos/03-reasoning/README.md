@@ -28,6 +28,7 @@ You'll see one failing test. The error message is loud but the cause is **not** 
 
 > The test `test_each_warehouse_is_independent` in #file:demos/03-reasoning/test_inventory.py is failing.
 > Run it, identify the root cause, and fix it. Do not modify the test.
+> Stop as soon as the failing test passes.
 
 ### What you're likely to see
 - A surface-level fix in `add_item` (deep-copying the items list on read).
@@ -44,6 +45,8 @@ You'll see one failing test. The error message is loud but the cause is **not** 
 > The test `test_each_warehouse_is_independent` in #file:demos/03-reasoning/test_inventory.py is failing.
 >
 > Diagnose the root cause across #file:demos/03-reasoning/inventory.py and #file:demos/03-reasoning/reporting.py. Explain the cause in one paragraph before changing any code, then apply the smallest fix at the root. Do not modify the test.
+>
+> Run `pytest demos/03-reasoning -q`. Stop when all tests are green.
 
 ### What you should see
 - The agent reads both files before changing anything.

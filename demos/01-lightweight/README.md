@@ -35,7 +35,9 @@ ruff check demos/01-lightweight
 > - Use descriptive parameter names.
 > - Make `ruff check demos/01-lightweight` pass.
 >
-> Do not change function names, signatures (other than parameter names), or behavior. Do not add new functions. When you're done, run the tests in demos/01-lightweight and confirm they pass.
+> Do not change function names, signatures (other than parameter names), or behavior. Do not add new functions. When you're done, run `pytest demos/01-lightweight -q` and `ruff check demos/01-lightweight`.
+>
+> Stop as soon as both commands are green.
 
 ## What to notice
 

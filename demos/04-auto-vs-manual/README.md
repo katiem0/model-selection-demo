@@ -32,7 +32,8 @@ You'll re-run three of the prompts you already used. Each one starts from a clea
    > - Use descriptive parameter names.
    > - Make `ruff check demos/01-lightweight` pass.
    >
-   > Do not change function names, signatures (other than parameter names), or behavior. Do not add new functions. When you're done, run the tests in demos/01-lightweight and confirm they pass.
+   > Do not change function names, signatures (other than parameter names), or behavior. Do not add new functions. Run `pytest demos/01-lightweight -q` and `ruff check demos/01-lightweight`.
+   > Stop as soon as both commands are green.
 4. Note: which model did Auto route to? (Hover over the assistant response in Copilot Chat.) How does the diff compare to the lightweight-model run from Demo 01?
 
 ### Round 2 — execution task (Demo 02 prompt)
@@ -66,6 +67,8 @@ You'll re-run three of the prompts you already used. Each one starts from a clea
    > The test `test_each_warehouse_is_independent` in #file:demos/03-reasoning/test_inventory.py is failing.
    >
    > Diagnose the root cause across #file:demos/03-reasoning/inventory.py and #file:demos/03-reasoning/reporting.py. Explain the cause in one paragraph before changing any code, then apply the smallest fix at the root. Do not modify the test.
+   >
+   > Run `pytest demos/03-reasoning -q`. Stop when all tests are green.
 4. Note: did Auto pick a reasoning-tier model? Did it find the root cause, or fix the symptom?
 
 ## Scorecard
