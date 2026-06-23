@@ -30,6 +30,7 @@ By the end of the session participants can:
 | [demos/05-research-plan-implement/](demos/05-research-plan-implement/) | Full R→P→I walkthrough on a small CLI (markdown link checker) |
 | [demos/06-copilot-coding-cloud/](demos/06-copilot-coding-cloud/) | Complex-scenario finale: context packet + optimized instructions + custom agent handoff (Copilot Coding / Cloud agent) |
 | [demos/07-context-management/](demos/07-context-management/) | Managing context in local IDE: when to reset, compact, re-anchor, and override instructions |
+| [demos/08-usage-optimization-commands/](demos/08-usage-optimization-commands/) | Slash command mini-demo: `/chronicle:cost-tips`, `/chronicle:tips`, `/compact`, and `/fork` |
 
 ## Setup (one-time, before the workshop)
 
@@ -62,5 +63,7 @@ You'll also want:
 - **Without CCA access:** Run Demo 07 instead. Covers the same principles (compact, re-anchor, new-chat signals, instruction scoping) entirely in local Copilot Chat. Same time budget.
 
 If time permits and the audience has CCA access, you can run both — Demo 07 is a fast conceptual primer (~10 min) that makes Demo 06's context packet feel immediately useful.
+
+**Optional add-on (6-8 min):** Run [demos/08-usage-optimization-commands/](demos/08-usage-optimization-commands/README.md) to show how slash commands improve token and credit efficiency without code changes.
 
 **Q&A (10 min):** Use the model cheatsheet as a reference for common questions.
