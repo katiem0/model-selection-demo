@@ -31,6 +31,12 @@ By the end of the session participants can:
 | [demos/06-copilot-coding-cloud/](demos/06-copilot-coding-cloud/) | Complex-scenario finale: context packet + optimized instructions + custom agent handoff (Copilot Coding / Cloud agent) |
 | [demos/07-context-management/](demos/07-context-management/) | Managing context in local IDE: when to reset, compact, re-anchor, and override instructions |
 | [demos/08-usage-optimization-commands/](demos/08-usage-optimization-commands/) | Slash command mini-demo: `/chronicle:cost-tips`, `/chronicle:tips`, `/compact`, and `/fork` |
+| [demos/09-monitor-and-cache/](demos/09-monitor-and-cache/) | Operations demo: monitor real usage, preserve cache, avoid invalidators |
+| [demos/10-reasoning-and-subagents/](demos/10-reasoning-and-subagents/) | Operations demo: reasoning effort defaults vs high; subagents on cheaper models |
+| [demos/11-tools-and-exclusions/](demos/11-tools-and-exclusions/) | Operations demo: keep tool/MCP surface minimal; exclude noisy files from context |
+| [demos/12-repo-map-and-guardrails/](demos/12-repo-map-and-guardrails/) | Operations demo: `AGENTS.md`, deterministic guardrails, and `/chronicle` loop |
+| [demos/13-slash-commands/](demos/13-slash-commands/) | Operations demo: `/compact`, `/fork`, and `/chronicle` as context controls |
+| [docs/operations-optimization-checklist.md](docs/operations-optimization-checklist.md) | One-page operations checklist (cache, tools, instructions, chronicle loop) |
 
 ## Setup (one-time, before the workshop)
 
@@ -65,5 +71,7 @@ You'll also want:
 If time permits and the audience has CCA access, you can run both — Demo 07 is a fast conceptual primer (~10 min) that makes Demo 06's context packet feel immediately useful.
 
 **Optional add-on (6-8 min):** Run [demos/08-usage-optimization-commands/](demos/08-usage-optimization-commands/README.md) to show how slash commands improve token and credit efficiency without code changes.
+
+**Operations track add-on (20-30 min):** Run demos [09](demos/09-monitor-and-cache/README.md) through [13](demos/13-slash-commands/README.md) as a seamless continuation focused on cache discipline, reasoning effort, tool/instruction minimization, and the `/chronicle` feedback loop.
 
 **Q&A (10 min):** Use the model cheatsheet as a reference for common questions.
